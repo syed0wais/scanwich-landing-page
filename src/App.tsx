@@ -1,4 +1,5 @@
 import React from 'react';
+import FeatureTable from './FeatureTable';
 import {
   QrCode,
   Clock,
@@ -64,14 +65,14 @@ function App() {
                 Contact
               </a>
             </div>
-            <button
+            {/* <button
               className="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-50 transition-colors"
               onClick={() =>
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
-              }
+              }xw
             >
               Get Started
-            </button>
+            </button> */}
           </nav>
 
           <div className="container mx-auto px-6 py-24 text-center">
@@ -89,7 +90,7 @@ function App() {
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
               }
             >
-              Get Started Today
+              Book a Demo
             </button>
           </div>
         </div>
@@ -121,6 +122,7 @@ function App() {
         </div>
       </section>
 
+
       {/* Pricing Section */}
       <section id="pricing" className="py-20">
         <div className="container mx-auto px-6">
@@ -130,21 +132,23 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <PricingCard
               title="Basic Plan"
-              price="₹5,999"
+              price="₹7,999"
               description="Perfect for small cafes and food trucks"
             />
             <PricingCard
               title="Business Plan"
-              price="₹9,999"
+              price="₹12,999"
               description="Ideal for mid-sized restaurants"
               featured={true}
             />
             <PricingCard
               title="Premium Plan"
-              price="₹14,999"
+              price="Contact Us"
               description="Best for large restaurants and chains"
             />
           </div>
+          {/* Feature Table */}
+          <FeatureTable />
         </div>
       </section>
 
