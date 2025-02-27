@@ -176,7 +176,7 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">Let's Connect!</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">Let's Connect! <br></br>or <br /> Directly call us at <br /> +91 123456789</h2>
           <div className="max-w-2xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg p-8">
               <form className="space-y-6" onSubmit={sendEmail}>

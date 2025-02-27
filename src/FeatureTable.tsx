@@ -41,13 +41,13 @@ const FeatureTable = () => {
             <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
               <td className="py-3 px-4 border-b">{feature.name}</td>
               <td className="py-3 px-4 border-b text-center">
-                {feature.basic ? '✅' : '❌'}
+                {feature.basic ? '✔️' : '❌'}
               </td>
               <td className="py-3 px-4 border-b text-center">
-                {feature.business ? '✅' : '❌'}
+                {feature.business ? '✔️' : '❌'}
               </td>
               <td className="py-3 px-4 border-b text-center">
-                {feature.premium ? '✅' : '❌'}
+                {feature.premium ? '✔️' : '❌'}
               </td>
             </tr>
           ))}
