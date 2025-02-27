@@ -14,7 +14,7 @@ import emailjs from 'emailjs-com'; // Import EmailJS
 import backgroundImage from './background.jpg'; // Adjust the path if necessary
 
 function App() {
-    const sendEmail = (e) => {
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
       
         emailjs
@@ -127,17 +127,17 @@ function App() {
       <section id="pricing" className="py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">
-            Pricing Plans
+            Pricing Plans 
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <PricingCard
               title="Basic Plan"
-              price="₹7,999"
+              price="₹7,999/year"
               description="Perfect for small cafes and food trucks"
             />
             <PricingCard
               title="Business Plan"
-              price="₹12,999"
+              price="₹12,999/year"
               description="Ideal for mid-sized restaurants"
               featured={true}
             />
@@ -176,7 +176,7 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16">Let's Connect! <br></br>or <br /> Directly call us at <br /> +91 123456789</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">Let's Connect! <br></br><span className="text-2xl">or</span><br /> Directly call us at <br /> +91 123456789</h2>
           <div className="max-w-2xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg p-8">
               <form className="space-y-6" onSubmit={sendEmail}>
